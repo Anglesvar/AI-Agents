@@ -9,7 +9,7 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# Generate and save image 
+# Generate and open image
 
 prompt = input("Enter the image description: ")
 response = client.images.generate(
